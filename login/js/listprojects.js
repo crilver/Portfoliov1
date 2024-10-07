@@ -22,6 +22,14 @@ window.addEventListener('load', function () {
   //Listen for auth state changes
   authStateListener();
 
+  document.getElementById('viewModal').addEventListener('click', function () {
+    showModal();
+  })
+  
+  document.getElementById('closeModal').addEventListener('click', () => {
+    closeModal()
+  })
+
   document.getElementById('sign-out').addEventListener('click', function () {
     signOut();
   });
@@ -29,13 +37,13 @@ window.addEventListener('load', function () {
 
 });
 
-function showWireframe() {
-  let modal = document.getElementById("modal3");
+function showModal() {
+  let modal = document.getElementById('modal3');
   modal.style.display = "block";
 }
 
-function closeModal(idModal) {
-  let modal = document.getElementById(idModal);
+function closeModal() {
+  let modal = document.getElementById('modal3');
   modal.style.display = "none";
 }
 

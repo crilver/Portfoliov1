@@ -22,17 +22,17 @@
   <h1 class="text-center mt-4">Welcome to my Portfolio</h1>
   <hr>
   <h2>CCTB - College Projects</h2>
-  <ul id="projects-list">
+  <ol id="projects-list">
     <li><a href="https://assignment1cristoballara.web.app/">Assignment #1 - Firebase Hosting Project</a></li>
     <li><a href="https://assignment2cristoballara.web.app/">Assignment #2 - Firebase Website Deployment with GitHub Automation</a></li>
     <li>
       <a href="https://assignment3cristoballara.web.app/">Assignment #3 - Firebase Website Deployment with GitHub Automation V2</a>
       <br>
-      <div class="btn btn-primary p-1" onclick="showWireframe()">View Wireframe</div>
+      <div id="viewModal" class="btn btn-primary p-1">View Wireframe</div>
     </li>
-  </ul>
+  </ol>
   <div id="modal3" class="custModal">
-    <span class="close" onclick="closeModal('modal3')">&times;</span>
+    <span id="closeModal" class="close">&times;</span>
     <img class="modal-content" alt="Wireframe 3" src="./img/wireframe3.jpg">
   </div>
   <div class="row">
