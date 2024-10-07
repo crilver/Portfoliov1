@@ -1,12 +1,4 @@
 /*
-  CCTB Website Development
-  IST105
-  Oct 2024
-  Description: This is a simple login website where students are asked to 
-  implement Social Network Login with Firebase
-*/
-
-/*
 Function onAuthStateChanged(user)
 Write a function to check if a user is logged
 */
@@ -19,7 +11,7 @@ function authStateListener() {
             // https://firebase.google.com/docs/reference/js/v8/firebase.User
             var uid = user.uid;
             // ...
-            location.href = 'home.html';
+            location.href = 'listprojects.html';
         } else {
             // User is signed out
             // ...
@@ -43,7 +35,7 @@ window.addEventListener('load', function () {
         firebase.auth().signInWithPopup(provider)
             .then(function (result) {
                 console.log('Logging sucessfully', result.user);
-                location.href = 'home.html';
+                location.href = 'listprojects.html';
             })
             .catch(function (error) {
                 console.log('Logging fail', error);
@@ -62,7 +54,7 @@ window.addEventListener('load', function () {
                 // ...
                 console.log('Logging sucessfully');
                 alert('Logging sucessfully');
-                location.href = 'home.html';
+                location.href = 'listprojects.html';
             })
             .catch((error) => {
                 let errorCode = error.code;
