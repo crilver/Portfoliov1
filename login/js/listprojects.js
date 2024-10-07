@@ -29,6 +29,16 @@ window.addEventListener('load', function () {
 
 });
 
+function showWireframe() {
+  let modal = document.getElementById("modal3");
+  modal.style.display = "block";
+}
+
+function closeModal(idModal) {
+  let modal = document.getElementById(idModal);
+  modal.style.display = "none";
+}
+
 function signOut() {
   // [START auth_sign_out]
   firebase.auth().signOut().then(() => {
